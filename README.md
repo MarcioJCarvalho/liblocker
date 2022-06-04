@@ -1,4 +1,6 @@
-# libcab
+<h1 align="center">
+Libcab
+</h1>
 <p align="center">Esse projeto se trata de um sistema para gerenciar emprestimos de armário de biblioteca</p>
 
 <p align="center">
@@ -19,11 +21,7 @@
 - [X] Registro de emprestimos de armário
 - [X] Geração de senhas e confirmação por e-mail
 
-### <li role="option" id="emoji-hammer_and_wrench" data-value=":hammer_and_wrench:" data-emoji-name="hammer_and_wrench" data-text="hammer_and_wrench">
-          <g-emoji alias="hammer_and_wrench" fallback-src="https://github.githubassets.com/images/icons/emoji/unicode/1f6e0.png" class="emoji-result">🛠</g-emoji>
-        hammer_and_wrench
-      </li>
-Tecnologias
+### 🛠Tecnologias
 - [Java](https://www.java.com/pt-BR/)
 - [Maven](https://maven.apache.org/)
 - [Hibernate](https://hibernate.org/)
