@@ -1,0 +1,4 @@
+:beetle: fixing "correeção de bugs"
+:package: feature "novas funcionalidades"
+:up: update "atualizações"
+:rocket: release "entrega de projeto"
