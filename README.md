@@ -1,5 +1,5 @@
 <h1 align="center">
-Libcab
+LibLocker
 </h1>
 <p align="center">Esse projeto se trata de um sistema para gerenciar emprestimos de armário de biblioteca</p>
 
