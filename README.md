@@ -6,7 +6,7 @@ LibLocker
 <p align="center">
     <a herf="#sobre">Sobre</a> |
     <a herf="#roadmap">Roadmap</a> |
-    <a herf="#tecnologias">Tecnologias</a> |
+    <a herf="###tecnologias">Tecnologias</a> |
     <a herf="#pre-requisitos">Pré-requisitos</a> |
     <a herf="#licenca">Licença</a> |
     <a herf="#autor">Autor</a>
