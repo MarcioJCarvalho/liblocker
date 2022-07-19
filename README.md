@@ -20,6 +20,8 @@ LibLocker
 ### Features
 - [X] Registro de emprestimos de armário
 - [X] Geração de senhas e confirmação por e-mail
+- [X] Cadastro de bibliotecários
+- [X] Cadastro de alunos
 
 ### 🛠Tecnologias
 - [Java](https://www.java.com/pt-BR/)
