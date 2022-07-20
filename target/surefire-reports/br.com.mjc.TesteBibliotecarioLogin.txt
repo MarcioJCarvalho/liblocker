@@ -1,0 +1,12 @@
+-------------------------------------------------------------------------------
+Test set: br.com.mjc.TesteBibliotecarioLogin
+-------------------------------------------------------------------------------
+Tests run: 3, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 0.038 s <<< FAILURE! - in br.com.mjc.TesteBibliotecarioLogin
+testeSenha(br.com.mjc.TesteBibliotecarioLogin)  Time elapsed: 0.005 s  <<< FAILURE!
+org.junit.ComparisonFailure: expected:<S[iape inexistente]!> but was:<S[enha incorréta]!>
+	at br.com.mjc.TesteBibliotecarioLogin.testeSenha(TesteBibliotecarioLogin.java:26)
+
+testeSiape(br.com.mjc.TesteBibliotecarioLogin)  Time elapsed: 0 s  <<< FAILURE!
+org.junit.ComparisonFailure: expected:<S[enha incorréta]!> but was:<S[iape inexistente]!>
+	at br.com.mjc.TesteBibliotecarioLogin.testeSiape(TesteBibliotecarioLogin.java:20)
+
