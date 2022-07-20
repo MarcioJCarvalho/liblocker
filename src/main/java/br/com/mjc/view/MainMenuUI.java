@@ -32,7 +32,7 @@ public class MainMenuUI extends javax.swing.JFrame {
         setName("frame"); // NOI18N
         setUndecorated(true);
         setResizable(false);
-        setSize(new java.awt.Dimension(1200, 800));
+        setSize(new java.awt.Dimension(0, 0));
 
         jPanel1.setBackground(new java.awt.Color(247, 247, 247));
         jPanel1.setFocusable(false);
@@ -110,8 +110,8 @@ public class MainMenuUI extends javax.swing.JFrame {
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
-                .addContainerGap(340, Short.MAX_VALUE)
-                .addComponent(txtEmprestimoResposta)
+                .addContainerGap(329, Short.MAX_VALUE)
+                .addComponent(txtEmprestimoResposta, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(69, 69, 69))
             .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(jPanel2Layout.createSequentialGroup()
@@ -153,7 +153,7 @@ public class MainMenuUI extends javax.swing.JFrame {
                 .addGap(75, 75, 75))
         );
 
-        jLabel4.setIcon(new javax.swing.ImageIcon("D:\\Projetos\\liblocker\\img.png")); // NOI18N
+        jLabel4.setIcon(new javax.swing.ImageIcon("/home/marcio/projetos/liblocker/img.png")); // NOI18N
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -204,7 +204,7 @@ public class MainMenuUI extends javax.swing.JFrame {
         for (int i = 0; i < senha.length; i++) {
             pw += senha[i];
         }
-        EmprestimoController.emprestar(txtChave.getText(), txtRa.getText(), pw);  
+        txtEmprestimoResposta.setText(EmprestimoController.emprestar(txtChave.getText(), txtRa.getText(), pw));
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void txtSenhaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtSenhaActionPerformed
