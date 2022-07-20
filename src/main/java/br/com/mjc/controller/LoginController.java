@@ -1,6 +1,8 @@
 package br.com.mjc.controller;
+import br.com.mjc.service.LoginService;
+
 public class LoginController {
-    public String auth(String email, String senha){
-        return "Sucesso no login";
+    public static String auth(String email, String senha) {
+        return LoginService.loginCheck(email, senha);
     }
 }
