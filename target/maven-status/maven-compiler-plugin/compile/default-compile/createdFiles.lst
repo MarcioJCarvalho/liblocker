@@ -1,0 +1,17 @@
+br\com\mjc\view\MainMenuUI$1.class
+br\com\mjc\model\Reserva.class
+br\com\mjc\model\Estudante.class
+br\com\mjc\view\MainMenuUI.class
+br\com\mjc\model\Armario.class
+br\com\mjc\controller\LoginController.class
+br\com\mjc\model\Bibliotecario.class
+br\com\mjc\controller\EmprestimoController.class
+br\com\mjc\service\EmprestimoService.class
+br\com\mjc\view\MainMenuUI$4.class
+br\com\mjc\service\LoginService.class
+br\com\mjc\model\Pessoa.class
+br\com\mjc\view\NewJFrame.class
+br\com\mjc\view\MainMenuUI$3.class
+br\com\mjc\view\MainMenuUI$5.class
+br\com\mjc\view\NewJFrame$1.class
+br\com\mjc\view\MainMenuUI$2.class

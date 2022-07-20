@@ -5,7 +5,7 @@ import java.sql.Date;
 public class Reserva {
     private Date dataHoraDevolucao;
     private Date dataHoraEmprestimo;
-    private Pessoa pessoa;
+    private Estudante estudante;
     private Armario armario;
 
 
@@ -15,7 +15,7 @@ public class Reserva {
     public Reserva(Date dataHoraDevolucao, Date dataHoraEmprestimo, Pessoa pessoa, Armario armario) {
         this.dataHoraDevolucao = dataHoraDevolucao;
         this.dataHoraEmprestimo = dataHoraEmprestimo;
-        this.pessoa = pessoa;
+        this.estudante = estudante;
         this.armario = armario;
     }      
 
@@ -36,11 +36,11 @@ public class Reserva {
     }
 
     public Pessoa getPessoa() {
-        return this.pessoa;
+        return this.estudante;
     }
 
     public void setPessoa(Pessoa pessoa) {
-        this.pessoa = pessoa;
+        this.estudante = estudante;
     }
 
     public Armario getArmario() {
