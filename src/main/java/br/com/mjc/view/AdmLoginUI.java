@@ -7,7 +7,7 @@ public class AdmLoginUI extends javax.swing.JFrame {
     public AdmLoginUI() {
         initComponents();
         initComplements();
-        txtRespostaBibliotecarioLogin.setBackground(new java.awt.Color(0,0,0,1));
+        txtBibliotecarioLoginResposta.setBackground(new java.awt.Color(0,0,0,1));
     }
     
     private void initComplements(){
@@ -25,9 +25,11 @@ public class AdmLoginUI extends javax.swing.JFrame {
         txtSenha = new javax.swing.JPasswordField();
         jButton1 = new javax.swing.JButton();
         jLabel4 = new javax.swing.JLabel();
-        txtRespostaBibliotecarioLogin = new javax.swing.JTextField();
+        txtBibliotecarioLoginResposta = new javax.swing.JTextField();
+        btnBibliotecarioLoginCancelar = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setBackground(new java.awt.Color(247, 247, 247));
 
         jLabel1.setFont(new java.awt.Font("Nirmala UI Semilight", 1, 14)); // NOI18N
         jLabel1.setText("BIBLIOTACÁRIO");
@@ -36,6 +38,7 @@ public class AdmLoginUI extends javax.swing.JFrame {
 
         jLabel3.setText("Senha:");
 
+        jButton1.setBackground(new java.awt.Color(204, 255, 204));
         jButton1.setText("Login");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -48,7 +51,15 @@ public class AdmLoginUI extends javax.swing.JFrame {
         jLabel4.setText("Criar cadastro?");
         jLabel4.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
 
-        txtRespostaBibliotecarioLogin.setBorder(null);
+        txtBibliotecarioLoginResposta.setBorder(null);
+
+        btnBibliotecarioLoginCancelar.setBackground(new java.awt.Color(255, 204, 204));
+        btnBibliotecarioLoginCancelar.setText("Cancelar");
+        btnBibliotecarioLoginCancelar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnBibliotecarioLoginCancelarActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -61,17 +72,19 @@ public class AdmLoginUI extends javax.swing.JFrame {
                         .addComponent(jLabel1))
                     .addGroup(layout.createSequentialGroup()
                         .addGap(251, 251, 251)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel4)
-                            .addComponent(jButton1)))
+                        .addComponent(jLabel4))
                     .addGroup(layout.createSequentialGroup()
                         .addGap(141, 141, 141)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addGroup(layout.createSequentialGroup()
+                                .addComponent(jButton1)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(btnBibliotecarioLoginCancelar))
                             .addComponent(jLabel2)
                             .addComponent(txtSiape)
                             .addComponent(jLabel3)
                             .addComponent(txtSenha, javax.swing.GroupLayout.DEFAULT_SIZE, 300, Short.MAX_VALUE)
-                            .addComponent(txtRespostaBibliotecarioLogin))))
+                            .addComponent(txtBibliotecarioLoginResposta))))
                 .addContainerGap(144, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
@@ -87,12 +100,14 @@ public class AdmLoginUI extends javax.swing.JFrame {
                 .addComponent(jLabel3)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(txtSenha, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(33, 33, 33)
-                .addComponent(jButton1)
-                .addGap(18, 18, 18)
+                .addGap(36, 36, 36)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jButton1)
+                    .addComponent(btnBibliotecarioLoginCancelar))
+                .addGap(15, 15, 15)
                 .addComponent(jLabel4)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 108, Short.MAX_VALUE)
-                .addComponent(txtRespostaBibliotecarioLogin, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(txtBibliotecarioLoginResposta, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(21, 21, 21))
         );
 
@@ -106,22 +121,29 @@ public class AdmLoginUI extends javax.swing.JFrame {
         for (int i = 0; i < senha.length; i++) {
             pw += senha[i];
         }
-        txtRespostaBibliotecarioLogin.setText(BibliotecarioLoginController.logar(txtSiape.getText(), pw));
-        String resultado = txtRespostaBibliotecarioLogin.getText();
+        txtBibliotecarioLoginResposta.setText(BibliotecarioLoginController.logar(txtSiape.getText(), pw));
+        String resultado = txtBibliotecarioLoginResposta.getText();
         if(resultado.equals("Logado com sucesso!")){
             new AdmMenuUI().setVisible(true);
+            new AdmLoginUI().dispose(); //deveria fexar a tela?
         }
     }//GEN-LAST:event_jButton1ActionPerformed
+
+    private void btnBibliotecarioLoginCancelarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBibliotecarioLoginCancelarActionPerformed
+        //new AdmMenuUI().dispose();
+        //new AdmMenuUI().setVisible(false); 
+    }//GEN-LAST:event_btnBibliotecarioLoginCancelarActionPerformed
 
     
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton btnBibliotecarioLoginCancelar;
     private javax.swing.JButton jButton1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
-    private javax.swing.JTextField txtRespostaBibliotecarioLogin;
+    private javax.swing.JTextField txtBibliotecarioLoginResposta;
     private javax.swing.JPasswordField txtSenha;
     private javax.swing.JTextField txtSiape;
     // End of variables declaration//GEN-END:variables

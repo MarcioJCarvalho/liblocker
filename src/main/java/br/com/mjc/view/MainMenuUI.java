@@ -7,6 +7,7 @@ public class MainMenuUI extends javax.swing.JFrame {
         initComponents();
         initComplements();
         setExtendedState(MAXIMIZED_BOTH);
+        txtEmprestimoResposta.setBackground(new java.awt.Color(0,0,0,1));
     }
     
     @SuppressWarnings("unchecked")

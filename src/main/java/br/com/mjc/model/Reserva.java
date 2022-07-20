@@ -12,7 +12,7 @@ public class Reserva {
     public Reserva() {
     }
 
-    public Reserva(Date dataHoraDevolucao, Date dataHoraEmprestimo, Pessoa pessoa, Armario armario) {
+    public Reserva(Date dataHoraDevolucao, Date dataHoraEmprestimo, Estudante estudante, Armario armario) {
         this.dataHoraDevolucao = dataHoraDevolucao;
         this.dataHoraEmprestimo = dataHoraEmprestimo;
         this.estudante = estudante;
@@ -35,13 +35,14 @@ public class Reserva {
         this.dataHoraEmprestimo = dataHoraEmprestimo;
     }
 
-    public Pessoa getPessoa() {
-        return this.estudante;
+    public Estudante getEstudante() {
+        return estudante;
     }
 
-    public void setPessoa(Pessoa pessoa) {
+    public void setEstudante(Estudante estudante) {
         this.estudante = estudante;
     }
+
 
     public Armario getArmario() {
         return this.armario;
